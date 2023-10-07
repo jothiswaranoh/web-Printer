@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(pink, purple);
+    height: 100vh;
+  }
+
+  .upload-box {
+    border-radius: 16px;
+    background: #b586fe;
+    margin: 20px;
+  }
+
+  .upload-area {
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px dashed rgba(41, 5, 88, 0.25);
+    cursor: pointer;
+  }
+
+  #upload-file {
+    background: #b486f3;
+    border-radius: 30px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 285px;
+    padding-right: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .file-input input {
+    display: none;
+  }
+
+  .doc_container .file-input h3 {
+    border: 1px solid rgba(61, 34, 222, 0.7);
+    border-radius: 10px;
+    background: #fbfdfe;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+
+  .doc_container .fileContainer {
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+  }
+
+  .doc_container .fileContainer h6 {
+    font-size: 1rem;
+  }
+
+  .doc_container .fileContainer p {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  @media(width>=768px)
+  {
+    .upload-box{
+        max-width: 600px;
+    }
+  }
+  @media(width<=405px)
+  {
+    .upload-box{
+        max-width: 400px;
+    }
+    .upload-area{
+      max-width: 300px;
+      padding: 12px;
+    }
+    .fileContainer{
+      max-width: 300px;
+      display: flex;
+      flex-direction: column  ;
+      text-align: center;
+
+    }
+    .file-left{
+      font-size:0.7rem;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
